@@ -48,10 +48,20 @@ def index():
 		print("Get request going through")
 		return render_template("index.html")
 
-@app.route("/terms",methods=["GET"])
-def terms():
+@app.route("/impressum",methods=["GET"])
+def impressum():
 
-	return render_template("terms.html")
+	return render_template("impressum.html")
+
+@app.route("/angebot",methods=["GET"])
+def angebot():
+
+	return render_template("angebot.html")
+
+@app.route("/strategy",methods=["GET"])
+def strategy():
+
+	return render_template("strategy.html")
 
 
 
